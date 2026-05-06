@@ -113,6 +113,15 @@
             height: 6px;
             width: 100%;
         }
+        /* New Menu Board Outline Styles */
+        .text-outline {
+            color: #ffffff;
+            text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0px 4px 8px rgba(0,0,0,0.5);
+        }
+        .text-outline-sm {
+            color: #ffffff;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0px 2px 4px rgba(0,0,0,0.5);
+        }
         .wash-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -296,11 +305,11 @@
                 
                 <div class="wash-card bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-red-600 relative order-first lg:order-none transform lg:-translate-y-2 lg:z-10">
                     <div class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase">Best Protection</div>
-                    <div class="bg-gray-900 text-white p-6 text-center flex flex-col justify-center items-center">
-                        <h3 class="text-xl md:text-2xl font-bold uppercase tracking-wide text-red-500 w-full text-center leading-tight">
+                    <div class="bg-gradient-to-b from-red-500 to-red-600 p-6 text-center flex flex-col justify-center items-center">
+                        <h3 class="text-xl md:text-2xl font-bold uppercase tracking-wide text-outline w-full text-center leading-tight">
                             <span class="inline-block">Ceramic/</span><span class="inline-block">Graphene</span>
                         </h3>
-                        <p class="text-gray-300 text-xs italic mt-1">Rain-X Graphene Shield</p>
+                        <p class="text-outline-sm text-[11px] font-bold mt-2 uppercase tracking-wider">Includes Diamond Wash +</p>
                     </div>
                     <div class="p-6 text-center border-b border-gray-100">
                         <div class="flex justify-center items-end gap-2 mb-2">
@@ -314,17 +323,16 @@
                     </div>
                     <div class="p-6 bg-gray-50 h-full">
                         <ul class="space-y-2 text-sm text-left text-gray-700">
-                            <li class="font-bold text-black flex items-center"><i data-lucide="star" class="w-4 h-4 text-red-500 mr-2"></i> All Diamond Features +</li>
-                            <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i> <span><strong>Rain-X Graphene:</strong> Ultimate protection & shine.</span></li>
-                            <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i> <span><strong>Armor All® Ceramic Seal:</strong> Superior repellency.</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i> <span><strong>ArmorAll® Professional Ceramic Seal</strong></span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i> <span><strong>Rain-X® Graphene</strong></span></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="wash-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-                    <div class="bg-blue-900 text-white p-5 text-center">
-                        <h3 class="text-xl font-bold uppercase tracking-wide">Diamond</h3>
-                        <p class="text-blue-200 text-xs">Extreme Shine & Coat</p>
+                <div class="wash-card bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-cyan-400">
+                    <div class="bg-gradient-to-b from-cyan-400 to-cyan-500 p-5 text-center flex flex-col justify-center items-center">
+                        <h3 class="text-xl md:text-2xl font-bold uppercase tracking-wide text-outline">Diamond</h3>
+                        <p class="text-outline-sm text-[11px] font-bold mt-2 uppercase tracking-wider">Includes Gold Wash +</p>
                     </div>
                     <div class="p-5 text-center border-b border-gray-100">
                         <div class="flex justify-center items-end gap-2 mb-2">
@@ -338,18 +346,17 @@
                     </div>
                     <div class="p-5 text-sm text-gray-600">
                         <ul class="space-y-2 text-left">
-                            <li class="font-bold text-black text-xs uppercase">Includes Gold Features +</li>
-                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span><strong>Premium Tire Shine</strong></span></li>
-                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span><strong>Armor All® Extreme Shine:</strong> Deep gloss.</span></li>
-                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span><strong>Clear Coat Protectant</strong></span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span><strong>ArmorAll® Professional Extreme Shine Wax</strong> (with Carnauba)</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span><strong>Black Magic® Tire Dressing</strong></span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span><strong>ArmorAll® Clear Coat</strong></span></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="wash-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-                    <div class="bg-blue-800 text-white p-5 text-center">
-                        <h3 class="text-xl font-bold uppercase tracking-wide text-yellow-400">Gold</h3>
-                        <p class="text-blue-200 text-xs">Rain Repellency & Foam</p>
+                <div class="wash-card bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-yellow-400">
+                    <div class="bg-gradient-to-b from-yellow-300 to-yellow-400 p-5 text-center flex flex-col justify-center items-center">
+                        <h3 class="text-xl md:text-2xl font-bold uppercase tracking-wide text-outline">Gold</h3>
+                        <p class="text-outline-sm text-[11px] font-bold mt-2 uppercase tracking-wider">Includes Silver Wash +</p>
                     </div>
                     <div class="p-5 text-center border-b border-gray-100">
                         <div class="flex justify-center items-end gap-2 mb-2">
@@ -363,18 +370,17 @@
                     </div>
                     <div class="p-5 text-sm text-gray-600">
                         <ul class="space-y-2 text-left">
-                            <li class="font-bold text-black text-xs uppercase">Includes Silver Features +</li>
-                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span><strong>Rain-X®:</strong> Improved visibility.</span></li>
-                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span><strong>Express Foam Bath</strong></span></li>
-                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span><strong>High Pressure Underbody</strong></span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span><strong>ArmorAll® Professional Express Foam</strong></span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span><strong>Rain-X® Complete Surface Protectant</strong></span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span><strong>High Pressure Underbody Wash</strong></span></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="wash-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-                    <div class="bg-gray-700 text-white p-5 text-center">
-                        <h3 class="text-xl font-bold uppercase tracking-wide text-gray-300">Silver</h3>
-                        <p class="text-gray-400 text-xs">Essential Cleaning</p>
+                <div class="wash-card bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-gray-300">
+                    <div class="bg-gradient-to-b from-gray-200 to-gray-300 p-5 text-center flex flex-col justify-center items-center">
+                        <h3 class="text-xl md:text-2xl font-bold uppercase tracking-wide text-outline">Silver</h3>
+                        <p class="text-outline-sm text-[11px] font-bold mt-2 uppercase tracking-wider">Essential Cleaning</p>
                     </div>
                     <div class="p-5 text-center border-b border-gray-100">
                         <div class="flex justify-center items-end gap-2 mb-2">
@@ -388,9 +394,9 @@
                     </div>
                     <div class="p-5 text-sm text-gray-600">
                         <ul class="space-y-2 text-left">
-                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span>Bug Prep</span></li>
-                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span>Snow Prep</span></li>
-                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span>Soap Bath</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span><strong>Bug Prep</strong></span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span><strong>Snow Prep</strong></span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="w-3 h-3 text-blue-500 mr-2 mt-1"></i> <span><strong>Soap Bath</strong></span></li>
                         </ul>
                     </div>
                 </div>
