@@ -225,26 +225,20 @@
             </button>
             
             <!-- Image Header -->
-            <div class="h-48 w-full bg-blue-900 relative">
-                <!-- Hosted Graphic with Unsplash Fallback -->
-                <img src="vote-graphic.jpg" alt="Vote for us" class="w-full h-full object-cover opacity-60 mix-blend-overlay" onerror="this.src='https://images.unsplash.com/photo-1596422846543-7ce77be1ebfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80';">
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <h2 class="text-4xl md:text-5xl font-bold text-white font-oswald tracking-wide uppercase text-shadow text-center px-4">Vote Us #1</h2>
-                </div>
+            <div class="w-full bg-blue-900 flex justify-center items-center py-6">
+                <!-- Hosted Graphic with Unsplash Fallback - using object-contain to show the whole image -->
+                <img src="vote-graphic.jpg" alt="Nominate us" class="w-full max-h-64 object-contain px-4" onerror="this.src='https://images.unsplash.com/photo-1596422846543-7ce77be1ebfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80';">
             </div>
             
             <!-- Content -->
-            <div class="p-8 text-center">
-                <div class="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 text-yellow-500 rounded-full mb-4 shadow-inner">
-                    <i data-lucide="award" class="w-8 h-8"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-blue-900 mb-3">Best of the Midwest</h3>
+            <div class="p-8 text-center pt-6">
+                <h3 class="text-3xl font-bold text-blue-900 mb-3 font-oswald uppercase">Best of the Best</h3>
                 <p class="text-gray-600 mb-8 leading-relaxed">
-                    We've been nominated for Rochester's Best Car Wash! If you love our 5-minute express shine, hand-prep, and free vacuums, please take a moment to vote for us.
+                    We are trying to get nominated for Rochester's Best Car Wash! If you love our 5-minute express shine, hand-prep, and free vacuums, please take a moment to nominate us.
                 </p>
                 
                 <a href="https://www.bestofthemidwest.com/rochester/best-of-the-best-rochester#/gallery/?group=549981" target="_blank" onclick="closeVoteModal()" class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 rounded-xl shadow-[0_0_15px_rgba(220,38,38,0.4)] transform hover:-translate-y-1 transition duration-200 text-lg uppercase tracking-wide">
-                    Nominate Now
+                    Nominate Us!
                 </a>
                 <button onclick="closeVoteModal()" class="mt-4 text-sm text-gray-400 hover:text-gray-600 transition underline decoration-transparent hover:decoration-gray-400 underline-offset-4">
                     No thanks, maybe later
