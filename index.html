@@ -168,10 +168,7 @@
             font-family: 'Oswald', sans-serif;
         }
         .text-shadow {
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        .hero-gradient {
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #b91c1c 100%);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
         .clip-slant {
             clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -305,45 +302,50 @@
         </div>
     </nav>
 
-    <!-- NATIONAL CAR WASH DAY POPUP MODAL -->
-    <div id="promoModal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 hidden opacity-0 transition-opacity duration-300 backdrop-blur-sm px-4">
-        <div class="bg-white rounded-3xl shadow-2xl w-full max-w-md overflow-hidden relative transform scale-95 transition-transform duration-300" id="promoModalContent">
+    <!-- VOTE 2026 POPUP MODAL -->
+    <div id="voteModal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 hidden opacity-0 transition-opacity duration-300 backdrop-blur-sm px-4">
+        <div class="bg-white rounded-3xl shadow-2xl w-full max-w-md overflow-hidden relative transform scale-95 transition-transform duration-300" id="voteModalContent">
             
             <!-- Close Button -->
-            <button onclick="closePromoModal()" class="absolute top-4 right-4 bg-black/50 hover:bg-black text-white rounded-full p-2 transition z-10 focus:outline-none">
+            <button onclick="closeVoteModal()" class="absolute top-4 right-4 bg-black/50 hover:bg-black text-white rounded-full p-2 transition z-10 focus:outline-none">
                 <i data-lucide="x" class="w-5 h-5"></i>
             </button>
 
-            <!-- Image Section (Looks for car-wash-day.jpg in GitHub) -->
-            <div class="w-full h-56 bg-blue-50 relative flex items-center justify-center overflow-hidden border-b border-gray-100">
-                <img src="car-wash-day.jpg" onerror="this.src='https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80&w=800'" alt="National Car Wash Day Promo" class="w-full h-full object-contain">
+            <!-- Image Section -->
+            <div class="w-full h-56 bg-slate-50 relative flex items-center justify-center overflow-hidden border-b border-gray-100">
+                <img src="vote-2026.jpg" onerror="this.src='https://images.unsplash.com/photo-1568227452042-49195b05777a?auto=format&fit=crop&q=80&w=800'" alt="Vote for us 2026" class="w-full h-full object-contain">
             </div>
 
             <!-- Content Section -->
             <div class="p-8 text-center">
-                <span class="inline-block bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">July 14th</span>
-                <h3 class="text-3xl font-bold text-blue-900 mb-4 font-oswald uppercase tracking-tight">National Car Wash Day!</h3>
+                <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">2026 Best of the Best</span>
+                <h3 class="text-3xl font-bold text-blue-900 mb-4 font-oswald uppercase tracking-tight">Help Us Win!</h3>
                 
-                <div class="my-6 space-y-4 text-gray-700 text-base font-medium">
-                    <p class="flex items-center justify-center gap-3"><i data-lucide="tag" class="w-6 h-6 text-red-500"></i> <strong>$10 OFF</strong> any Buy 3, Get 1 Free package</p>
-                    <p class="flex items-center justify-center gap-3"><i data-lucide="wind" class="w-6 h-6 text-green-500"></i> <strong>FREE Air Freshener</strong></p>
-                </div>
+                <p class="text-gray-600 text-base mb-6 px-2">We are honored to be nominated for Rochester's "Best of the Best" 2026. Please take a moment to vote for Express Car Wash 1!</p>
 
-                <p class="text-gray-500 text-sm mb-6 px-4">Stop by Express Car Wash 1 on July 14th to celebrate and take advantage of these exclusive deals!</p>
-
-                <!-- Action Button (Dismisses Modal) -->
-                <button onclick="closePromoModal()" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-lg py-4 rounded-xl shadow-lg transform hover:-translate-y-1 transition duration-200">
-                    Awesome, Thanks!
+                <!-- Action Button -->
+                <a href="https://rochester.secondstreetapp.com/og/04b00c32-329d-41ec-9a32-0ab86e199392/gallery/546717562" target="_blank" onclick="closeVoteModal()" class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold text-lg py-4 rounded-xl shadow-lg transform hover:-translate-y-1 transition duration-200">
+                    Vote Now!
+                </a>
+                
+                <button onclick="closeVoteModal()" class="mt-4 text-sm text-gray-400 hover:text-gray-600 transition">
+                    Maybe later
                 </button>
             </div>
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <header class="hero-gradient text-white pt-24 pb-32 clip-slant relative overflow-hidden">
-        <div class="container mx-auto px-4 text-center relative z-10">
-            
-            <div class="inline-flex items-center gap-3 bg-blue-900/30 backdrop-blur-md px-6 py-2 rounded-full border border-white/30 shadow-[0_0_15px_rgba(255,255,255,0.1)] mb-8 hover:bg-blue-900/40 transition duration-300">
+    <!-- Hero Section (Now Using Background Image) -->
+    <header class="relative pt-24 pb-32 clip-slant overflow-hidden">
+        <!-- Background Image with Dark Overlays for Text Readability -->
+        <div class="absolute inset-0 z-0">
+            <img src="hero-bg.jpg" alt="Express Car Wash 1 Tunnel" class="w-full h-full object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=2000'">
+            <div class="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/40 via-transparent to-slate-900/80"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 text-center relative z-10 text-white">
+            <div class="inline-flex items-center gap-3 bg-blue-900/40 backdrop-blur-md px-6 py-2 rounded-full border border-white/30 shadow-[0_0_15px_rgba(255,255,255,0.1)] mb-8 hover:bg-blue-900/50 transition duration-300">
                 <span class="text-sm font-bold tracking-widest uppercase text-white drop-shadow-sm">
                     Rochester's <span class="text-blue-200">Best Value</span>
                 </span>
@@ -354,7 +356,7 @@
                 <span class="text-red-300">Every Time.</span>
             </h1>
             
-            <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto font-light text-blue-100">
+            <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto font-light text-blue-50 text-shadow">
                 The best 5-minute express wash near you. Four premium soft-cloth wash tiers. Unlimited savings. Locally loved in Rochester.
             </p>
             
@@ -368,8 +370,6 @@
                 </a>
             </div>
         </div>
-        
-        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
     </header>
     
     <div class="usa-stripe"></div>
@@ -560,7 +560,6 @@
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Rain-X -->
                 <div class="reveal delay-100 bg-blue-800/50 p-8 rounded-xl border border-blue-700 backdrop-blur-sm">
                     <div class="mb-4 text-yellow-400">
                         <i data-lucide="droplets" class="w-10 h-10"></i>
@@ -570,8 +569,6 @@
                         The next level of protection. Graphene nanotechnology creates a tighter web of protection than traditional ceramic coatings, offering incredible water beading, slickness, and durability against Minnesota weather.
                     </p>
                 </div>
-
-                <!-- Armor All Ceramic -->
                 <div class="reveal delay-200 bg-blue-800/50 p-8 rounded-xl border border-blue-700 backdrop-blur-sm">
                     <div class="mb-4 text-red-400">
                         <i data-lucide="shield" class="w-10 h-10"></i>
@@ -581,8 +578,6 @@
                         Locks in the shine. This hydrophobic layer bonds to your vehicle's surface, repelling water, dirt, and UV rays to keep your car cleaner for longer and making future washes easier.
                     </p>
                 </div>
-
-                <!-- Extreme Shine -->
                 <div class="reveal delay-300 bg-blue-800/50 p-8 rounded-xl border border-blue-700 backdrop-blur-sm">
                     <div class="mb-4 text-green-400">
                         <i data-lucide="sparkles" class="w-10 h-10"></i>
@@ -659,10 +654,8 @@
                 <p class="text-gray-600 text-lg">We love hearing from our Rochester community. If you've visited Express Car Wash 1 recently, please consider leaving us a review!</p>
             </div>
 
-            <!-- Leave a Review Button -->
             <div class="reveal delay-100 text-center mt-4">
                 <a href="https://g.page/r/CZQLU7nxTcqVEBM/review" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-white border-2 border-gray-200 text-gray-800 font-bold py-3 px-8 rounded-full hover:bg-gray-50 hover:border-blue-300 transition shadow-sm transform hover:-translate-y-1">
-                    <!-- Google 'G' Icon SVG -->
                     <svg class="w-5 h-5 mr-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
                         <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
